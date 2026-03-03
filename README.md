@@ -75,6 +75,26 @@ brew install cmake
 | D | [generator-expressions](02-intermediate/D-generator-expressions/) | Compile-time conditional logic |
 | E | [build-with-ninja](02-intermediate/E-build-with-ninja/) | Using Ninja and other generators |
 
+### 03 — Testing
+| # | Example | Description |
+|---|---------|-------------|
+| A | [ctest-intro](03-testing/A-ctest-intro/) | Introduction to CTest |
+| B | [google-test](03-testing/B-google-test/) | GoogleTest integration with FetchContent |
+| C | [catch2](03-testing/C-catch2/) | Catch2 integration |
+
+### 04 — Packaging
+| # | Example | Description |
+|---|---------|-------------|
+| A | [install-basics](04-packaging/A-install-basics/) | CPack basics — creating distributable packages |
+| B | [version-config](04-packaging/B-version-config/) | Package version and config files |
+
+### 05 — Modern CMake
+| # | Example | Description |
+|---|---------|-------------|
+| A | [target-properties](05-modern-cmake/A-target-properties/) | Target-based approach — the modern way |
+| B | [interface-libraries](05-modern-cmake/B-interface-libraries/) | Header-only (interface) libraries |
+| C | [fetchcontent](05-modern-cmake/C-fetchcontent/) | Downloading dependencies with FetchContent |
+
 ---
 
 ## How to Use This Tutorial
@@ -84,7 +104,6 @@ brew install cmake
 Every example includes cross-platform build scripts:
 
 **Unix (Linux/macOS):**
-
 ```bash
 cd 01-basics/A-hello-cmake
 chmod +x build.sh
@@ -103,6 +122,12 @@ mkdir build && cd build
 cmake ..
 cmake --build .
 ```
+
+### Recommended Learning Path
+
+1. **Start with 01-basics** — Work through A to J in order
+2. **Move to 02-intermediate** — Builds on basics concepts
+3. **Pick your interest** — Testing, Packaging, or Modern CMake can be done in any order
 
 ### Conventions Used
 
