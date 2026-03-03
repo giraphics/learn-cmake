@@ -6,6 +6,8 @@ A beginner-friendly, progressive tutorial for learning **CMake** — the industr
 > **Languages:** C++ (C++11 / C++14 / C++17)
 > **Platforms:** Windows, Linux, macOS
 
+**Live website:** [https://giraphics.github.io/learn-cmake/](https://giraphics.github.io/learn-cmake/)
+
 ---
 
 ## Prerequisites
@@ -153,7 +155,9 @@ target_include_directories(app PRIVATE include)  # Add include paths
 
 ## Documentation (MkDocs book)
 
-This repo can be built as a **static book** with [MkDocs](https://www.mkdocs.org/):
+The tutorial is available as a **live book** at **[https://giraphics.github.io/learn-cmake/](https://giraphics.github.io/learn-cmake/)**.
+
+You can also build it locally as a static book with [MkDocs](https://www.mkdocs.org/):
 
 ```bash
 pip install -r requirements-docs.txt
