@@ -1,0 +1,9 @@
+# MkDocs and theme for building the Learn CMake book
+# Install: pip install -r requirements-docs.txt
+# Serve:  mkdocs serve
+# Build:  mkdocs build
+
+mkdocs>=1.5.0,<2.0
+mkdocs-material>=9.0.0
+mkdocs-include-markdown-plugin>=4.0
+pymdown-extensions>=10.0

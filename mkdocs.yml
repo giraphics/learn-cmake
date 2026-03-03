@@ -1,0 +1,76 @@
+# Learn CMake — MkDocs book configuration
+# Build with: mkdocs serve (dev) or mkdocs build
+
+site_name: Learn CMake
+site_description: A comprehensive cross-platform CMake tutorial
+site_author: Learn CMake
+
+# Source files live in docs/; stubs include READMEs from repo via include-markdown
+docs_dir: docs
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+
+plugins:
+  - include-markdown: {}
+  - search
+
+nav:
+  - Home: index.md
+  - MkDocs Beginner Tutorial: MKDOCS-BEGINNER-TUTORIAL.md
+  - 01 - Basics:
+    - A - Hello CMake: 01-basics/hello-cmake.md
+    - B - Hello Headers: 01-basics/hello-headers.md
+    - C - Static Library: 01-basics/static-library.md
+    - D - Shared Library: 01-basics/shared-library.md
+    - E - Variables: 01-basics/variables.md
+    - F - Build Type: 01-basics/build-type.md
+    - G - Compile Flags: 01-basics/compile-flags.md
+    - H - Third-Party Library: 01-basics/third-party-library.md
+    - I - C++ Standard: 01-basics/cpp-standard.md
+    - J - Installing: 01-basics/installing.md
+  - 02 - Intermediate:
+    - A - Subprojects: 02-intermediate/subprojects.md
+    - B - Code Generation: 02-intermediate/code-generation.md
+    - C - Imported Targets: 02-intermediate/imported-targets.md
+    - D - Generator Expressions: 02-intermediate/generator-expressions.md
+    - E - Build with Ninja: 02-intermediate/build-with-ninja.md
+  - 03 - Testing:
+    - A - CTest Intro: 03-testing/ctest-intro.md
+    - B - Google Test: 03-testing/google-test.md
+    - C - Catch2: 03-testing/catch2.md
+  - 04 - Packaging:
+    - A - Install Basics: 04-packaging/install-basics.md
+    - B - Version Config: 04-packaging/version-config.md
+  - 05 - Modern CMake:
+    - A - Target Properties: 05-modern-cmake/target-properties.md
+    - B - Interface Libraries: 05-modern-cmake/interface-libraries.md
+    - C - FetchContent: 05-modern-cmake/fetchcontent.md
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - admonition
+  - tables
